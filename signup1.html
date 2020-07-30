@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Psych Today</title>
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="sticky-footer.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon-16x16.png">
+    <style>
+      textarea:hover, 
+      input:hover, 
+      textarea:active, 
+      input:active, 
+      textarea:focus, 
+      input:focus,
+      button:focus,
+      button:active,
+      button:hover,
+      label:focus,
+      select:hover,
+      select:active,
+      select:focus,
+      .btn:active,
+      .btn.active
+      {
+        outline:0px !important;
+        -webkit-appearance:none;
+        box-shadow: none !important;
+      }
+      
+      .body{
+        white-space: 10px      
+      }
+    </style>
+    <script type="text/javascript">
+      function checkForm(form){
+        if(form.username.value == "") {
+              alert("Error: Username cannot be blank!");
+              form.username.focus();
+              return false;
+            }
+            re = /^\w+$/;
+            if(!re.test(form.username.value)) {
+              alert("Error: Username must contain only letters, numbers and underscores!");
+              form.username.focus();
+              return false;
+            }
+        if(form.pwd1.value != "" && form.pwd1.value == form.pwd2.value) {
+          if(form.pwd1.value.length < 8) {
+            alert("Error: Password must contain at least eight characters!");
+            form.pwd1.focus();
+            return false;
+          }
+          if(form.pwd1.value == form.username.value) {
+            alert("Error: Password must be different from Username!");
+            form.pwd1.focus();
+            return false;
+          }
+          re = /[0-9]/;
+          if(!re.test(form.pwd1.value)) {
+            alert("Error: password must contain at least one number (0-9)!");
+            form.pwd1.focus();
+            return false;
+          }
+          re = /[a-z]/;
+          if(!re.test(form.pwd1.value)) {
+            alert("Error: password must contain at least one lowercase letter (a-z)!");
+            form.pwd1.focus();
+            return false;
+          }
+          re = /[A-Z]/;
+          if(!re.test(form.pwd1.value)) {
+            alert("Error: password must contain at least one uppercase letter (A-Z)!");
+            form.pwd1.focus();
+            return false;
+          }
+        } else {
+          alert("Error: Please check that you've entered and confirmed your password!");
+          form.pwd1.focus();
+          return false;
+        }
+
+        
+        return true;
+      }
+
+    </script>
+    <!-- Favicon -->
+  </head>
+<body>
+  <!-- BLOGS -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-light" style="background-color: #0CEC60;">
+      <a class="navbar-brand" href="homepage_notloggedin.html">Psych Today</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="homepage_notloggedin.html">
+              Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Forums</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="psychologynews_notloggedin.html">Psychology News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blogs_notloggedin.html">Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about_notloggedin.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#footer">Contact Us</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input disabled class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button disabled class="btn btn-outline-success my-2 my-sm-0 disabled" aria-disabled="true" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+    <div style="margin-left: 10px; margin-right: 10px;">
+      <br><br><br>
+      <h1>Create a free account now!</h1>
+      <form action="writeblog.html">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputUsername4">Username</label>
+            <input type="text" class="form-control" id="inputUsername4" placeholder="Unicorn123" required name="username">
+            <small id="inputEmail4" class="form-text text-muted">
+              The name we will use to refer to you. Do not involve your actual name for increased anonymity.
+            </small>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="123@example.com" required aria-describedby="inputEmail4">
+            <small id="inputEmail4" class="form-text text-muted">
+              We'll never share your email with anyone else.
+            </small>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputPassword4">Password</label>
+          <input type="password" class="form-control" id="inputPassword4" placeholder="*********" required aria-describedby="inputPassword4" name="pwd1">
+          <small id="inputPassword4" class="form-text text-muted" >
+            Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+          </small>
+        </div>
+        <div class="form-group">
+          <label for="inputAddress2">Confirm Password</label>
+          <input type="password" class="form-control" id="inputAddress2" placeholder="*********" required pattern=".{8,20}" name="pwd2">
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputProfession">Profession</label>
+            <select id="inputProfession" class="form-control" required> 
+              <option value="">Choose...</option>
+              <option value="student">Student</option>
+              <option value="psychologist">Psychologist</option>
+              <option value="psychiatrist">Psychiatrist</option>
+              <option value="researcher">Researcher</option>
+              <option value="professor">Professor</option>
+            </select>
+          </div>
+         
+        </div>
+        <button type="submit" class="btn btn-primary">Sign in</button>
+      </form>
+    </div>
+    </div>
+    <br>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <div id="footer" class="color">
+      <footer class="footer">
+      <div style="background-color: #0CEC60">
+        <span style="color: black">Contact us on:
+        Phone: 0000000 Email: 123@example.com</span>
+      </div>
+    </footer>
+
+    </div>
+</body>
+</html>

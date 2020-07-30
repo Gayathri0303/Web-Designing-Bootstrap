@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Psych Today</title>
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="sticky-footer.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon-16x16.png">
+    <!-- script -->
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript">
+    function showfield(name){
+      if(name=='Other')document.getElementById('div1').innerHTML='Other: <input type="text" name="other" />';
+      else document.getElementById('div1').innerHTML='';
+    }
+    </script>
+    <style>
+      textarea:hover, 
+      input:hover, 
+      textarea:active, 
+      input:active, 
+      textarea:focus, 
+      input:focus,
+      button:focus,
+      button:active,
+      button:hover,
+      label:focus,
+      select:hover,
+      select:active,
+      select:focus,
+      
+      .btn:active,
+      .btn.active
+      {
+        outline:0px !important;
+        -webkit-appearance:none;
+        box-shadow: none !important;
+      }
+      .body{
+        white-space: 10px      
+      
+    </style>
+    <!-- Favicon -->
+  </head>
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top navbar-light" style="background-color: #0CEC60;">
+      <a class="navbar-brand" href="homepage_loggedin.html">Psych Today</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="homepage_loggedin.html">
+              Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="forum.html">Forums</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="psychologynews_loggedin.html">Psychology News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blogs_loggedin.html">Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about_loggedin.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#footer">Contact Us</a>
+          </li>
+        </ul>
+        
+        <form class="form-inline my-2 my-lg-0">
+          <input disabled class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button disabled class="btn btn-outline-success my-2 my-sm-0 disabled" aria-disabled="true" type="submit">Search</button>
+        </form>
+        <ul class="navbar-nav ">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="profile.png" class="img-fluid" style="vertical-align: middle; width: 30px; height: 30px; border-radius: 50%;border: 1px solid black">
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="profile.html">Profile</a>
+              <a class="dropdown-item" href="profile.html#blog">My Blogs</a>
+              <a class="dropdown-item" href="#">Liked News Items</a>
+              <a class="dropdown-item" href="#">My Forums</a>
+              <div class="dropdown-divider">
+              </div>
+              <a class="dropdown-item" href="homepage_notloggedin.html">Sign Out</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div style="margin-left: 10px; margin-right: 10px;">
+      <br><br><br>
+      <h1>Happy Writing!</h1>
+      <form action="publishedblog.html">
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input type="text" class="form-control" id="title" aria-describedby="emailHelp" placeholder="Enter title" required>
+          
+        </div>
+        <div class="form-group">
+          <label for="content">Content</label>
+          <textarea id="content" class="form-control" rows="3" required></textarea>
+        </div>
+        <div class="form-group">
+            <span>Select Topic</span>
+            <select class="form-control" id="SelectTopic" required>
+              <option value="">Choose...</option>
+              
+              <option value="Psychology and You">Psychology and You</option>
+              <option value="Mental Health">Mental Health</option>
+              <option value="Other">Other</option>
+            </select>
+            <div id="div1"></div></script>
+          </div>
+        <p>Or</p>
+        <div class="form-group">
+            <label for="exampleFormControlFile1">Upload file</label>
+            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+          </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        
+      </form>
+      <br><a href="#" tabindex="-1" aria-disabled="true">
+      <button class="btn btn-primary">Save as draft</button></a>
+    </div>
+    </div>
+    <br>
+    <div id="footer" class="color">
+      <footer class="footer">
+      <div style="background-color: #0CEC60">
+        <span style="color: black">Contact us on:
+        Phone: 0000000 Email: 123@example.com</span>
+      </div>
+    </footer>
+
+    </div>
+</body>
+</html>

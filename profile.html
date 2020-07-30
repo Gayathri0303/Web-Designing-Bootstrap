@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Psych Today</title>
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="sticky-footer.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon-16x16.png">
+    <style>
+      textarea:hover, 
+      input:hover, 
+      textarea:active, 
+      input:active, 
+      textarea:focus, 
+      input:focus,
+      button:focus,
+      button:active,
+      button:hover,
+      label:focus,
+      .btn:active,
+      .btn.active
+      {
+        outline:0px !important;
+        -webkit-appearance:none;
+        box-shadow: none !important;
+      }
+      .body{
+        white-space: 10px      
+      }
+      .carousel-control-next,
+      .carousel-control-prev {
+          filter: invert(100%);
+      }
+      
+    </style>
+    <!-- Favicon -->
+  </head>
+  <body style="">
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light " style="background-color: #0CEC60;">
+      <a class="navbar-brand" href="homepage_loggedin.html">Psych Today</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="homepage_loggedin.html">
+              Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="forum.html">Forums</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="psychologynews_loggedin.html">Psychology News</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="blogs_loggedin.html">Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about_loggedin.html">About</a>
+          </li>
+            <a class="nav-link" href="#footer">Contact Us</a>
+          </li>
+          <li class="nav-item">
+        </ul>
+        
+        <form class="form-inline my-2 my-lg-0">
+          <input disabled class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button disabled class="btn btn-outline-success my-2 my-sm-0 disabled" aria-disabled="true" type="submit">Search</button>
+        </form>
+
+        <ul class="navbar-nav ">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="profile.png" class="img-fluid" style="vertical-align: middle; width: 30px; height: 30px; border-radius: 50%;border: 1px solid black">
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#top">Profile</a>
+              <a class="dropdown-item" href="#blog">My Blogs</a>
+              <a class="dropdown-item" href="#">Liked News Items</a>
+              <a class="dropdown-item" href="#">My Forums</a>
+              <div class="dropdown-divider">
+              </div>
+              <a class="dropdown-item" href="homepage_notloggedin.html">Sign Out</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+          
+
+    <!-- Form -->
+    <div style="margin-left: 10px; margin-right: 10px">
+      <div id="top">
+        <br><br><br>
+        <h1>Hello, __________</h1>
+        <p>Welcome to your profile.<br> Here you can see your blogs, the news articles you have liked and the forums you are currently involved in.</p>
+        <p>Enjoy!</p>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+      </div>
+      <hr>
+      <div id="blog">
+        
+        <div style="clear: left; max-width: 99%; clear: right">
+          
+          <h1 align="center">Your Blogs</h1>
+          <br><a href="writeblog.html"><button type="button" class="btn btn-primary">Write A New Blog</button></a><br>
+          <section class="text-center my-5">
+          <div class="row">
+            <div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
+              <div class="view overlay rounded z-depth-2 mb-4">
+                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/81.jpg" alt="Sample image">
+                <a>
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+              <a href="#!" class="pink-text">
+                <h6 class="font-weight-bold mb-3"><i class="fas fa-map pr-2"></i>Mental Health</h6>
+              </a>
+              <h4 class="font-weight-bold mb-3"><strong>Title of the new article</strong></h4>
+              <p>by <a class="font-weight-bold">You</a>, 15/07/2018</p>
+              <p class="dark-grey-text">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit
+                quo minus id quod maxime placeat facere possimus voluptas.</p>
+              <a class="btn btn-info btn-rounded btn-md">Read more</a>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-md-0 mb-4">
+              <div class="view overlay rounded z-depth-2 mb-4">
+                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" alt="Sample image">
+                <a>
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+              <a href="#!" class="deep-orange-text">
+                <h6 class="font-weight-bold mb-3"><i class="fas fa-graduation-cap pr-2"></i>Educational Psychology</h6>
+              </a>
+              <h4 class="font-weight-bold mb-3"><strong>Title of the new article</strong></h4>
+              <p>by <a class="font-weight-bold">You</a>, 13/07/2018</p>
+              <p class="dark-grey-text">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit
+                quo minus id quod maxime placeat facere possimus voluptas.</p>
+              <a class="btn btn-info btn-rounded btn-md">Read more</a>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-0">
+              <div class="view overlay rounded z-depth-2 mb-4">
+                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/13.jpg" alt="Sample image">
+               <a>
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+              <a href="#!" class="blue-text">
+                <h6 class="font-weight-bold mb-3"><i class="fas fa-fire pr-2"></i>Psychology and You</h6>
+              </a>
+              <h4 class="font-weight-bold mb-3"><strong>Title of the new article</strong></h4>
+              <p>by <a class="font-weight-bold">You</a>, 11/07/2018</p>
+              <p class="dark-grey-text">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed
+                quia consequuntur magni dolores eos qui ratione.</p>
+              <a class="btn btn-info btn-rounded btn-md">Read more</a>
+            </div>
+          </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <br>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <div id="footer" class="color">
+      <footer class="footer">
+      <div style="background-color: #0CEC60">
+        <span style="color: black">Contact us on:
+        Phone: 0000000 Email: 123@example.com</span>
+      </div>
+    </footer>
+
+    </div>
+  </body>
+</html>
